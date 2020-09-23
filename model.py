@@ -47,7 +47,7 @@ model.add(Dense(n_classes, activation='softmax'))
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
 # fit the model
-model.fit(x_train, y_train, epochs=2, batch_size=502, verbose=1)
+model.fit(x_train, y_train, epochs=10, batch_size=128, verbose=1)
 
 # evaluate the model
 loss, acc = model.evaluate(x_test, y_test, verbose=0)
